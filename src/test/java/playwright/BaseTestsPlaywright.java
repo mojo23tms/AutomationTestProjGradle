@@ -1,3 +1,5 @@
+package playwright;
+
 import com.microsoft.playwright.Page;
 import io.github.uchagani.jp.UseBrowserConfig;
 import org.junit.jupiter.api.Test;
