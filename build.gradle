@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.practice'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.github.uchagani:junit-playwright:latest.release'
+    implementation 'com.microsoft.playwright:playwright:latest.release'
+    implementation 'com.google.inject:guice:latest.release'
+    implementation 'org.seleniumhq.selenium:selenium-java:latest.release'
+    implementation 'org.junit.jupiter:junit-jupiter:latest.release'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
